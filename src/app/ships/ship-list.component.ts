@@ -3,7 +3,6 @@ import { IShip } from "./ship";
 
 @Component({
 
-    selector:'pm-ships',
     templateUrl: './ship-list.component.html',
     styleUrls:['./ship-list.component.css']
 })
@@ -30,6 +29,7 @@ export class ShipListComponent implements OnInit{
     filteredShips: IShip[] = [];
     ships: IShip[] = [
         {   
+            "shipId": 1,
             "imageUrl": "assets/images/garden_cart.png",
             "shipName": "FastNFurious",
             "shipIMO": 'BS-1234',
@@ -38,6 +38,7 @@ export class ShipListComponent implements OnInit{
             "shipContacts": "gosho@icb.bg"
         },
         {   
+            "shipId": 2,
             "imageUrl": "assets/images/hammer.png",
             "shipName": "Shlupka",
             "shipIMO": 'CH-1231',

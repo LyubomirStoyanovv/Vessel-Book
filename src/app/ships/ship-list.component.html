@@ -42,7 +42,11 @@
                                   [style.margin.px]='imageWidth'>
 
                         </td>
-                        <td>{{ ship.shipName }}</td>
+                        <td>
+                            <a [routerLink]="['/ships', ship.shipId]">
+                                {{ ship.shipName }}
+                            </a>
+                        </td>
                         <td>{{ ship.shipIMO | convertToSpaces: '-'}}</td>
                         <td>{{ ship.shipType }}</td>
                         <td>{{ ship.shipOwner }}</td>
