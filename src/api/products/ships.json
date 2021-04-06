@@ -1,0 +1,37 @@
+[
+  {
+    "shipName": "Shlupka",
+    "shipIMO": "1234",
+    "shipType":"Scout",
+    "shipOwner": "BG Governemnt",
+    "shipContacts": "pesho@icb.bg"
+  },
+  {
+    "shipName": "Nepotopim",
+    "shipIMO": "2236",
+    "shipType":"Horror",
+    "shipOwner": "BG Governemnt",
+    "shipContacts": "ivan@icb.bg"
+  },
+  {
+    "shipName": "FastNFurious",
+    "shipIMO": "4402",
+    "shipType":"Destroyer",
+    "shipOwner": "US Government",
+    "shipContacts": "us@gmail.com"
+  },
+  {
+    "shipName": "FastNFurious2",
+    "shipIMO": "4403",
+    "shipType":"Destroyer",
+    "shipOwner": "US Government",
+    "shipContacts": "us@gmail.com"
+  },
+  {
+    "shipName": "Buggsy",
+    "shipIMO": "1234",
+    "shipType":"Scout",
+    "shipOwner": "US Government",
+    "shipContacts": "something@icb.bg"
+  }
+]
