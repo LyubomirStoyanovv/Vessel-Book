@@ -17,14 +17,22 @@
         </div>
         <div class="table-responsive">
             <table class="table" *ngIf='ships.length'>
+                <input type="text" name="" id="">
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf='ships.length'>
                 <thead>
+                    
                     <tr>
+                        
                         <th>
                             <button class="btn btn-primary"
                                 (click)='toggleImage()'>
                                 {{ showImage? 'Hide': 'Show'}} Image
                             </button>
-                        </th>
+                        </th>  
+                                            
                         <th>Name</th>
                         <th>IMO</th>
                         <th>Type</th>

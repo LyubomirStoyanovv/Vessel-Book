@@ -1,18 +1,30 @@
 import { Component, OnInit } from "@angular/core";
 import { IShip } from "./ship";
-
+// import {Router} from '@angular/router';
 @Component({
+
 
     templateUrl: './ship-list.component.html',
     styleUrls:['./ship-list.component.css']
+    
 })
 
 export class ShipListComponent implements OnInit{
+    
+    // constructor(public router:Router){
+
+    // }
+
+    // PassDataToOtherPage(){
+
+    //     this.router.navigate(['ships'],{queryParams:{id:1,name:"xyz"}});
+    // }
+    
     pageTitle: string = 'Ship list';
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
-    
+
     private _listFilter: string = '';
     
     get listFilter() : string {
@@ -21,16 +33,14 @@ export class ShipListComponent implements OnInit{
     
     set listFilter(value : string) {
         this._listFilter = value;
-        console.log("In setter:", value);
         this.filteredShips = this.performFilter(value);
-    }
-    
+    }    
     
     filteredShips: IShip[] = [];
     ships: IShip[] = [
         {   
-            "shipId": 1,
-            "imageUrl": "assets/images/garden_cart.png",
+            "shipId": 3,
+            "imageUrl": "assets/images/HMS-Furious.png",
             "shipName": "FastNFurious",
             "shipIMO": 'BS-1234',
             "shipType":"Destroyer",
@@ -38,8 +48,8 @@ export class ShipListComponent implements OnInit{
             "shipContacts": "gosho@icb.bg"
         },
         {   
-            "shipId": 2,
-            "imageUrl": "assets/images/hammer.png",
+            "shipId": 4,
+            "imageUrl": "assets/images/ship-design-overview.jpg",
             "shipName": "Shlupka",
             "shipIMO": 'CH-1231',
             "shipType":"Scout",
@@ -60,4 +70,6 @@ export class ShipListComponent implements OnInit{
     ngOnInit(): void{
         this.listFilter ='';
     }
+
+    
 }
